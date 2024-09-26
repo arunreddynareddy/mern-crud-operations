@@ -1,0 +1,52 @@
+.create-container {
+    width: 40%;
+    margin: 50px auto;
+    background-color: rgb(230, 236, 230);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.create-container form {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-container form h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: cornflowerblue;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: rgb(68, 142, 31);
+    font-size: 0.75rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 10px 0 3px 0;
+}
+
+.input-group input {
+    font-size: 0.75rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #0d0d0d;
+    border-radius: 3px;
+}
+
+.create-container form button {
+    margin: 20px 0 0 0;
+    align-self: stretch;
+}
+
+

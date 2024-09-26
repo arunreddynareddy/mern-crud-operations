@@ -1,0 +1,41 @@
+.user-table {
+    width: 60%;
+    margin: 50px auto;
+    background-color: beige;
+    padding: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.no-data-found {
+    text-align: center;
+}
+
+.user-table button {
+    margin: 20px 0px;
+}
+
+.user-table table {
+    width: 100%;
+}
+
+.user-table table thead th {
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+}
+
+.user-table table tbody td {
+    background-color: white;
+    color: darkolivegreen;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+.active-button button {
+    margin: 0 10px;
+}
