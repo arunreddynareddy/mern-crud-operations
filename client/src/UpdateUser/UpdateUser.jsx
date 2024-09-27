@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import url from "../url.jsx"
 
 const CreateUser = () => {
 
@@ -20,7 +21,7 @@ const CreateUser = () => {
 
     useEffect(() => {
         const getUser = async() => {
-            await axios.get(`http://localhost:4001/api/user/${id}`)
+            await axios.get(`${url}/api/user/${id}`)
             .then((response) => setNewUser(response.data))
             .catch((error) => console.log({message: error.message}))
         }
@@ -29,7 +30,7 @@ const CreateUser = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await axios.put(`http://localhost:4001/api/update/${id}`, newUser)
+        await axios.put(`${url}/api/update/${id}`, newUser)
         .then((response) => {
             toast.success(response.data.message)
             navigate("/")

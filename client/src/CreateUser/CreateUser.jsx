@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import toast from "react-hot-toast"
 import "./CreateUser.css"
+import url from "../url.jsx"
 
 const CreateUser = () => {
 
@@ -20,7 +21,7 @@ const CreateUser = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await axios.post("http://localhost:4001/api/user", newUser)
+        await axios.post(`${url}/api/user`, newUser)
         .then((response) => {
             toast.success(response.data.message, {position: "top-center"})
             navigate("/")
